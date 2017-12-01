@@ -15,7 +15,7 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install nodejs
 
 ## Clone repository
-git clone https://github.com/robatronPrime/CLOCOSS_Sign_Off_2.git
+git clone https://github.com/robatronPrime/CLOCOSS_Sign_Off_3.git
 
 ## Install express into CLOCOSS Sign Off 2
 npm install --save express
