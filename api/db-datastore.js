@@ -47,6 +47,4 @@ module.exports.post = async (id, val) => {
 module.exports.delete = async (id, val) => {
   // asynchronously delete the entity
   const [data] = await ds.delete(key(id));
-  if (data && data.val) return data.val;
-  return '';
 };
