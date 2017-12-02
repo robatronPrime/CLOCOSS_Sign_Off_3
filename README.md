@@ -19,6 +19,7 @@ git clone https://github.com/robatronPrime/CLOCOSS_Sign_Off_3.git
 
 ## Install express and simple-google-openid into CLOCOSS Sign Off 3
 npm install --save express
+
 npm install simple-google-openid
 
 ## To test run
