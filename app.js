@@ -1,11 +1,11 @@
-const express require('express');
+const express = require('express');
 const app = express();
 const googleauth = require('simple-google-openid');
 
 app.use('/api', require('./api'));
 
 // you can put your client ID here
-app.use(googleauth(process.env.GOOGLE_CLIENT_ID));
+app.use(googleauth("511406985315-rl37rcsg10p64jn3aejk6i52t9ior0bv.apps.googleusercontent.com"));
 
 // you can put your realm here instead of 'jwt'
 // return 'Not authorized' if we don't have a user
