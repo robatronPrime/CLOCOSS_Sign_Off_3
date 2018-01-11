@@ -12,7 +12,7 @@ api.use(googleauth("511406985315-rl37rcsg10p64jn3aejk6i52t9ior0bv.apps.googleuse
 api.use(googleauth.guardMiddleware({realm: 'jwt'}));
 
 //json array of users.
-const users=[{
+let users=[{
   "email": "robstow94@gmail.com", "roles": ["user", "admin"]
 }];
 
@@ -122,7 +122,7 @@ api.delete('/user/:id', async (req, res) => {
     if (checkAdmin(req) == false) {
       res.sendStatus(403);
     } else {
-      userRoles = users.filter((user) => { return user.email !== req.params.id; });
+      users = users.filter((user) => { return user.email !== req.params.id; });
       res.sendStatus(204);
     }
   } catch (e){
